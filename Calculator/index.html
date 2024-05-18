@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Calculator</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Calculator</h1>
+  </header>
+  <main>
+  <div class="calculator">
+    <div id="screen"></div>
+    <div class="buttons-container">
+
+        <div id="div-one" class="main-div">
+            
+            <button class="button" id="del" onclick="main('DEL')">DEL</button>
+            <button class="button" id="7" onclick="main('7')">7</button>
+            <button class="button" id="8" onclick="main('8')">8</button>
+            <button class="button" id="9" onclick="main('9')">9</button>
+            <button class="button" id="ac" onclick="main('AC')">AC</button>
+            <button class="button" id="4" onclick="main('4')">4</button>
+            <button class="button" id="5" onclick="main('5')">5</button>
+            <button class="button" id="6" onclick="main('6')">6</button>
+            <button class="button" id="." onclick="main('.')">.</button>
+            <button class="button" id="1" onclick="main('1')">1</button>
+            <button class="button" id="2" onclick="main('2')">2</button>
+            <button class="button" id="3" onclick="main('3')">3</button>
+            <button class="button" id="00" onclick="main('00')">00</button>
+            <button class="button" id="0" onclick="main('0')">0</button>
+            <button class="button" id="lp" onclick="main('lp')">(</button>
+            <button class="button" id="rp" onclick="main('rp')">)</button>
+        </div>
+
+        <div id="div-two" class="main-div">
+            <div id="div-two-1">
+              <button class="button" id="/" onclick="main('/')">/</button>
+              <button class="button" id="*" onclick="main('*')">*</button>
+              <button class="button" id="minus-button" onclick="main('-')">-</button>
+              <button class="button" id="√" onclick="main('√')">√</button>
+            </div>
+
+            <div id="div-two-2">
+              <button class="button" id="add-button" onclick="main('+')">+</button>
+              <div id="bottom">
+                <button class="button" class="bottom-buttons" id="%" onclick="main('%')">%</button>
+                <button class="button" class="bottom-buttons" id="=" onclick="main('=')">=</button>
+              </div>
+            </div>
+        </div>
+
+    </div>
+  </div>
+  </main>
+  <footer>.</footer>
+</body>
+</html>
