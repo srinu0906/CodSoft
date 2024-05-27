@@ -1,0 +1,268 @@
+body
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h1
+{
+    justify-content: center;
+    background: url("images/bg4.jpg") no-repeat center center;
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+}
+header
+{
+    display: flex;
+    align-items: center;
+}
+header img
+{
+    height: 5vh;
+    width: 5vh;
+    padding: 10px;
+}
+#poster
+{
+    width: 100%;
+}
+#about
+{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+#about h2
+{
+    color: blue;
+}
+#about p
+{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+#registration
+{
+    display: flex;
+    justify-content: center;
+}
+#registration form
+{
+    background-color: darkblue;
+    display: block;
+    color: white;
+    padding: 50px;
+    width: fit-content;
+}
+#registration form .input-field
+{
+    height:30px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+#registration form #submit
+{
+    border-radius: 5px;
+    padding :10px;
+    width :80px;
+    background-color: blue;
+    color: white;
+    border: 1px solid white;
+    transition: transform 1s ease-in;
+}
+#registration form #submit:hover
+{
+    background-color: orangered;
+    border: 1px solid white;
+}
+
+#advantages
+{
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.objectives
+{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    border: .5px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+.objectives img
+{
+    height: 100px;
+    width: 100px;
+}
+#our-services
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.services
+{
+    height: 400px;
+    width:200px;
+    padding: 0;
+    color: aliceblue;
+    transition: transform 0.5s ease-in-out;
+    writing-mode: vertical-rl;
+}
+#interior-designs
+{
+    background: url("images/interior.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#exterior-designs
+{
+    background: url("images/exterior.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#wall-coatings
+{
+    background: url("images/wall-coating.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#water-proofing
+{
+    background: url("images/water-proof.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#wallpapers
+{
+    background: url("images/wallpaper.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#wood-painting
+{
+    background: url("images/wood.jpg") no-repeat center center;
+    background-size: cover;
+}
+.services h3
+{
+    transition: transform 0.5s ease;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.services .description
+{
+    writing-mode: horizontal-tb;
+    width: 150px;
+    font-size: 15px;
+    margin-top: 250px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    opacity: 0;
+    transition: transform 0.5s ease;
+    
+}
+.services:hover
+{
+    transform: scale(1.2);
+}
+.services:hover .description
+{
+    background-color:  rgba(0, 0, 0, 0.7);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes slide {
+    form
+    {
+        left: -50px;
+        opacity: 0;
+    }
+    to
+    {
+        left: 0;
+        top: 50px;
+        opacity: 1;
+    }
+}
+
+#subscribe
+{
+    border-bottom: 1px solid;
+}
+#subscribe form
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: darkblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#subscribe form h2
+{ 
+    color: orangered;
+    margin-left: 30px;
+}
+#subscribe form #mail
+{
+    height: 50px;
+    width: 500px;
+    margin-left: 30px;
+    border: 1px solid white;
+    color: white;
+    background-color: darkblue;
+    border-radius: 10px;
+}
+#subscribe form #bottom-button
+{
+    height:40px;
+    width: 150px;
+    margin-left: 80vb;
+    background-color: blue;
+    color:white;
+    font-weight: 100;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+#subscribe form #bottom-button:hover
+{
+    transform: scale(1.1);
+    background-color: red;
+    border: 1px solid white;
+}
+footer
+{
+    background-color: darkblue;
+    color: white;
+}
+footer img
+{
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
