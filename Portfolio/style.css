@@ -1,0 +1,306 @@
+body
+{
+    background-color: rgb(15, 15, 15);
+    color: white;
+    margin:0px;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    
+}
+.headings
+{
+    font-size: 5vh;
+    margin: 50px;
+}
+.divisions
+{
+    padding-top:30px;
+}
+/* header and nav- bar*/
+header
+{
+    padding:20px;
+    position: fixed;
+    top:0%;
+    width: 100%;
+    backdrop-filter: blur(30px);
+}
+div{
+    scroll-margin-top:100px;
+}
+.nav-items
+{
+    display: block;
+    float: right;
+    padding-right: 50px;
+}
+
+.nav-bar .logo
+{
+    font-size: 20px;
+}
+.nav-bar a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.home
+{
+    color: white;
+    text-align: center;
+    margin-top:50px;
+    background-image:url("images/background.jpeg") ;
+    background-size: cover;
+    height: 100dvh
+}
+
+.home h2
+{
+    font-size: 10vh;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: backwards;
+}
+.home h1
+{
+    font-size: 20vh;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: backwards;
+
+}
+@keyframes slide {
+    from
+    {
+        padding-bottom: 100px;
+    }
+    to 
+    {
+        padding-bottom: 0px;
+    }
+}
+@keyframes fadeIn {
+    from
+    {
+        opacity: 0;
+    }
+    to 
+    {
+        opacity: 1;
+    }
+}
+.home p
+{
+    font-size: 5vh;
+}
+
+/*about */
+.about img
+{
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.about p
+{
+    margin:50px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    height: auto;
+    width: auto;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+.bio
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/*skills*/
+.my-skills
+{
+    height:12vh;
+    width: 50vh;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 50px;
+    padding-left: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.5s ease;
+    box-shadow: 2px 2px white;
+}
+.my-skills img
+{
+    height: 80px;
+    width: 80px;
+}
+
+.my-skills:hover
+{
+    transform: scale(1.1);
+    box-shadow: 4px 4px wheat;
+}
+#javascript img, #dsa img
+{
+    height: 55px;
+    width: 55px;
+    padding: 10px;
+}
+.skills-box
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/*projects*/
+.projects-box
+{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.my-projects
+{
+    height:400px;
+    width: 300px;
+    margin: 50px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: width 0.5s;
+    align-content: end;
+}
+#landing-page
+{
+    background: url("images/landing-page.png") no-repeat center center;
+    background-size: cover;
+}
+#calculator
+{
+    background: url("images/calculator.png") no-repeat center center;
+    background-size: cover;
+}
+#infix-convertor
+{
+    background: url("images/infix-convertor.png") no-repeat center center;
+    background-size: cover;
+}
+#tic-tac-toe
+{
+    background: url("images/tic-tac-toe.png") no-repeat center center;
+    background-size: cover;
+}
+#rps
+{
+    background: url("images/rps.png") no-repeat center center;
+    background-size: cover;
+}
+#personal-bio-page
+{
+    background: url("images/personal-bio-page.png") no-repeat center center;
+    background-size: cover;
+}
+.project-names
+{
+
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+.project-names a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.my-projects:hover
+{
+    width:600px;
+}
+
+/*resume*/
+#my-resume
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-top: 30px;
+}
+#my-resume img
+{
+    height: 500px;
+    width: 350px;
+}
+
+#my-resume button
+{
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: transform 0.5s ease;
+}
+#my-resume button:hover
+{
+    border: 2px solid white;
+    transform: scale(1.1);
+}
+#my-resume button a
+{
+    text-decoration: none;
+    color: white;
+}
+
+/*contact */
+.contact-me
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    margin: 100px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 100px;
+}
+
+.contact-me h3 a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.contact-me h3 a:hover
+{
+    color: blue;
+}
+/*footer*/
+footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+footer img
+{
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+}
